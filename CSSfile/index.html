@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Survey Form</title>
+<link rel="stylesheet" href="form2..css">
+
+</head>
+<body>
+	<header class="header">
+<h1 id="title" >freeCodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+</header>
+
+<form id="survey-form" action="https://www.google.com/">
+
+<fieldset>
+
+  <label id="name-label">Name </label><input type="text" id="name" required placeholder="Enter your name" />
+
+<label id="email-label">Email </label><input type="email" id="email" required placeholder="Enter your Email"/> 
+
+<label id="number-label">Age (optional)</label> <input type="number" id="number" min="10" max="99" placeholder="Age" />
+
+<label> Which option best describes your role?</label>
+<select id="dropdown">
+  <option>Select current role</option>
+  <option>Student</option>
+  <option>Full Time Job</option>
+  <option>Full Time Learner</option>
+  <option>Prefer not to say</option>
+  <option>Other</option>
+</select>
+
+
+  <div class="rad">
+ <label >Would you recommend freeCodeCamp to a friend?</label><br>
+
+ <input type="radio" name="recommend" value="def" class="inline" /> <div class="prob"> Definitely </div><br>
+
+ <input type="radio" name="recommend" value="maybe" class="inline" /> <div class="prob"> Maybe </div><br>
+
+<input type="radio" name="recommend" value="notsure" class="inline" /> <div class="prob"> Not sure </div><br>
+
+</div >
+
+<label> What is your favorite feature of freeCodeCamp?</label>
+ <select id="dropdown">
+  <option>Select an option</option>
+  <option>Challanges</option>
+  <option>Projects</option>
+  <option>Community</option>
+  <option>Open Source</option>
+</select><br>
+
+<label>What would you like to see improved? (check all that apply) </label><br>
+
+  <input type="checkbox" value="front" class="inline" /> <div class="check"> Front-end Projects </div> <br>
+  <input type="checkbox" value="back" class="inline" /> <div class="check"> Back-end Projects </div> <br>
+  <input type="checkbox" value="data" class="inline"/> <div class="check"> Data Visualization </div> <br>
+  <input type="checkbox" value="challanges" class="inline"/> <div class="check"> Challenges </div> <br>
+  <input type="checkbox" value="open" class="inline"/> <div class="check"> Open Source Community </div> <br>
+  <input type="checkbox" value="gitter" class="inline"/> <div class="check"> Gitter help rooms </div> <br>
+  <input type="checkbox" value="videos" class="inline"/> <div class="check"> Videos </div> <br>
+  <input type="checkbox" value="meetups" class="inline"/> <div class="check"> City Meetups </div> <br>
+  <input type="checkbox" value="Wiki" class="inline"/> <div class="check"> Wiki </div> <br>
+  <input type="checkbox" value="Forum" class="inline"/> <div class="check"> Forum </div> <br>
+  <input type="checkbox" value="Additional" class="inline"/> <div class="check"> Additional Courses </div> <br><br>
+ 
+
+
+<label for="comment"> Any comments or suggestions? </label><textarea name="comment" id="comment" placeholder="Enter your comment here..."></textarea>
+
+
+<input type="submit" value="Submit" id="submit"/>
+
+</fieldset>
+  </form>
+
+
+</body>
+
+
+
+  </html>
